@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+   <p>welcome</p>
+   <button onclick='myFunction()'>
+       click
+   </button>
+ 
+<script>
+function myFunction() {
+  document.open();
+  document.write("<p>welcome to javascript</p> <button  onclick='myFunction1()'> click</button> ");
+  document.close();
+}
+</script>
+<script>
+    function myFunction1() {
+      document.open();
+      document.write("<p>welcome </p> <button onclick='myFunction()'> click</button>");
+      document.close();
+    }
+</script>
+
+</body>
+</html>

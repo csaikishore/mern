@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=45;
+        var a=46; //Var can redeclare
+        console.log("Number is:"+a);
+        let b=46;
+        // let b=47 //let Cannot redeclare
+        console.log("Number is:"+b);
+        const c=30;
+        console.log("Constant Number:"+c);
+        // c=45+45;    //Cannot reinitialize or change the value of const
+        // console.log("Constant Number:"+c);
+        //datatypes{
+        //numbers
+        //strings
+        //booleans
+        //undefined
+        //null
+        //}
+        //objects
+        let obj={
+            x:5,
+            y:10,
+            myfun:function hi(number){
+                console.log("My fun:"+number);
+            }
+        }
+        console.log(obj);
+        //Javascript Function
+        function display(){
+            console.log("Welcome to JavaScript");
+        }
+        //Listening to event
+        document.addEventListener("click",function click1(){
+            console.log("Event Handled");
+            //alert("Event Handled");
+            let x=confirm("Are You Sure?");
+            console.log(x);
+        })
+        let arr=[12,13,14];
+        // for (let index = 0; index < array.length; index++) {
+        //     const element = array[index];
+        //     console.log(element);
+        // }
+        arr.forEach(element => {
+            console.log(element);
+        });
+        setTimeout((number) => {
+            console.log("given number :"+number);
+        }, 3000);
+        console.log("after settimeout function");
+    </script>
+</head>
+<body>
+    I am learning JavaScript
+</body>
+</html>

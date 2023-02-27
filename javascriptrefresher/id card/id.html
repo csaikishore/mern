@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="id.css" /> 
+    <title>ID-Card</title>
+</head>
+<body>
+    
+    <div class="container" >
+        <div class="logo">
+        </div>
+        <div class="pic">
+        </div>
+        <div class="name">
+            <p1>F_name  L_name</p1>
+            <h3>DEPT</h3>
+        </div>
+        <div class="student_id">
+            <h3>Student ID</h3>
+            <h2><b id="id1">21000XXXXX</b></h2>
+            <h3 id = id2>2021-2025</h3>
+        </div>
+        <div class="sign-T">
+            <div class="sign">
+            </div>
+            <div id ="id3">
+                <h4> Issuing  Authority</h4>
+            </div>
+        </div>
+    </div>
+
+    <button class ="button" id-="mainBtn" onclick="redirectFunction()" ><b>Back Side</b></button>
+    <script>
+        document.getElementById("mainBtn").addEventListener("click", redirectFunction);
+        
+        function redirectFunction(){
+            window.location.href = "http://127.0.0.1:5501/id2.html";
+        }
+    </script>
+</body>
+</html>
